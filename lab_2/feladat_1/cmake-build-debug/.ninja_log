@@ -1,0 +1,4 @@
+# ninja log v5
+1	140	6986735835528426	CMakeFiles/feladat_1.dir/src/main.c.obj	c883a9cffc628734
+15	142	6986735835538430	CMakeFiles/feladat_1.dir/src/functions.matrix.c.obj	6708d44395e2925a
+142	316	6986735837193880	feladat_1.exe	3b032467a1f8b999
