@@ -1,0 +1,7 @@
+# ninja log v5
+7	155	6980673153091347	CMakeFiles/feladat_2.dir/Src/functions.c.obj	cce6cc0dba90a24a
+0	184	6980673153417562	CMakeFiles/feladat_2.dir/Src/main.c.obj	3d0296c221cd16d8
+185	355	6980673155048026	feladat_2.exe	ac94cf2411669205
+11	119	6980681704862521	CMakeFiles/feladat_2.dir/Src/functions.c.obj	3943f2e533ad294
+2	125	6980681704924025	CMakeFiles/feladat_2.dir/Src/main.c.obj	81633650ef40da63
+125	295	6980681706565727	feladat_2.exe	ac94cf2411669205
