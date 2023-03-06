@@ -1,0 +1,30 @@
+ Kis Janos
+	Neptun Code: DRPTK2
+	Birth place: Budapest
+	Date of birth: 2001/11/12
+	Gender: MALE
+	Exam result: 7.45
+ Mary Trent
+	Neptun Code: QSTRG9
+	Birth place: Hollywood
+	Date of birth: 2001/12/5
+	Gender: FEMALE
+	Exam result: 9.50
+ Nagy Anna
+	Neptun Code: KOSGT8
+	Birth place: Budapest
+	Date of birth: 2000/2/25
+	Gender: FEMALE
+	Exam result: 8.15
+ Tina Sane
+	Neptun Code: THJIS2
+	Birth place: Barcelona
+	Date of birth: 1994/8/27
+	Gender: FEMALE
+	Exam result: 5.70
+ Tom Tate
+	Neptun Code: SGHKD1
+	Birth place: Mexico
+	Date of birth: 1999/4/7
+	Gender: MALE
+	Exam result: 6.70

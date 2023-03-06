@@ -232,7 +232,7 @@ int maximumValueOfColumn(int rows, int columnIndex, int **pMatrix) {
     }
     return max;
 }
-
+//5
 int *columnMaximums(int rows, int cols, int **pMatrix) {
     int *max;
     max = (int *) malloc(rows * sizeof(int));
@@ -252,7 +252,7 @@ int *columnMaximums(int rows, int cols, int **pMatrix) {
     }
     return max;
 }
-
+//6
 int maximumValueOfMatrix(int rows, int cols, int **pMatrix) {
     int max = pMatrix[0][0];
     for (int i = 0; i < rows; ++i) {
@@ -264,7 +264,7 @@ int maximumValueOfMatrix(int rows, int cols, int **pMatrix) {
     }
     return max;
 }
-
+//7
 int sumOfMatrixElements(int rows, int cols, int **pMatrix) {
     int sum = 0;
     for (int i = 0; i < rows; ++i) {
@@ -274,6 +274,21 @@ int sumOfMatrixElements(int rows, int cols, int **pMatrix) {
     }
     return sum;
 }
+//teszt
+int minimumValueOfDiagonal(int rows, int cols, int **pMatrix) {
+    int min = pMatrix[0][0];
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            if(i == j){
+                if(min > pMatrix[i][j]){
+                    min = pMatrix[i][j];
+                }
+            }
+        }
+    }
+    return min;
+}
+
 
 
 

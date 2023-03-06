@@ -57,7 +57,9 @@ int main() {
     //6
     printf("a matrix legnagyobb eleme: %i\n", maximumValueOfMatrix(n,m,matrix));
     //7
-    printf("a matrix elemeinek teljes osszege: %i", sumOfMatrixElements(n,m,matrix));
+    printf("a matrix elemeinek teljes osszege: %i\n", sumOfMatrixElements(n,m,matrix));
+    //teszt
+    printf("a foatlon levo elemek minimuma: %i", minimumValueOfDiagonal(n,m,matrix));
     deallocateMemoryForArray(x,&a);
     deallocateMemoryForMatrix(row,&matrix);
     return 0;

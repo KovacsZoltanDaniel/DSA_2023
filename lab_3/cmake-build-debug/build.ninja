@@ -49,15 +49,22 @@ cmake_ninja_workdir = F$:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/
 
 build cmake_object_order_depends_target_lab_3: phony || CMakeFiles/lab_3.dir
 
-build CMakeFiles/lab_3.dir/src/main.c.obj: C_COMPILER__lab_3_Debug F$:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/src/main.c || cmake_object_order_depends_target_lab_3
-  DEP_FILE = CMakeFiles\lab_3.dir\src\main.c.obj.d
+build CMakeFiles/lab_3.dir/main.c.obj: C_COMPILER__lab_3_Debug F$:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/main.c || cmake_object_order_depends_target_lab_3
+  DEP_FILE = CMakeFiles\lab_3.dir\main.c.obj.d
+  FLAGS = -g -std=gnu2x
+  INCLUDES = -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/lab_3 -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/headers
+  OBJECT_DIR = CMakeFiles\lab_3.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_3.dir
+
+build CMakeFiles/lab_3.dir/src/student.c.obj: C_COMPILER__lab_3_Debug F$:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/src/student.c || cmake_object_order_depends_target_lab_3
+  DEP_FILE = CMakeFiles\lab_3.dir\src\student.c.obj.d
   FLAGS = -g -std=gnu2x
   INCLUDES = -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/lab_3 -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/headers
   OBJECT_DIR = CMakeFiles\lab_3.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_3.dir\src
 
-build CMakeFiles/lab_3.dir/src/functions.c.obj: C_COMPILER__lab_3_Debug F$:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/src/functions.c || cmake_object_order_depends_target_lab_3
-  DEP_FILE = CMakeFiles\lab_3.dir\src\functions.c.obj.d
+build CMakeFiles/lab_3.dir/src/product.c.obj: C_COMPILER__lab_3_Debug F$:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/src/product.c || cmake_object_order_depends_target_lab_3
+  DEP_FILE = CMakeFiles\lab_3.dir\src\product.c.obj.d
   FLAGS = -g -std=gnu2x
   INCLUDES = -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/lab_3 -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_3/headers
   OBJECT_DIR = CMakeFiles\lab_3.dir
@@ -71,7 +78,7 @@ build CMakeFiles/lab_3.dir/src/functions.c.obj: C_COMPILER__lab_3_Debug F$:/Egye
 #############################################
 # Link the executable lab_3.exe
 
-build lab_3.exe: C_EXECUTABLE_LINKER__lab_3_Debug CMakeFiles/lab_3.dir/src/main.c.obj CMakeFiles/lab_3.dir/src/functions.c.obj
+build lab_3.exe: C_EXECUTABLE_LINKER__lab_3_Debug CMakeFiles/lab_3.dir/main.c.obj CMakeFiles/lab_3.dir/src/student.c.obj CMakeFiles/lab_3.dir/src/product.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab_3.dir

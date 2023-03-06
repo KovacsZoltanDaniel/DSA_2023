@@ -49,4 +49,6 @@ int* columnMaximums(int rows, int cols, int **pMatrix);
 int maximumValueOfMatrix(int rows, int cols, int **pMatrix);
 //7
  int sumOfMatrixElements(int rows, int cols, int **pMatrix);
+ // teszt
+ int minimumValueOfDiagonal(int rows, int cols, int **pMatrix);
 #endif //FELADAT_1_FUNCTIONS_MATRIX_H

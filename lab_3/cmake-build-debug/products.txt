@@ -1,0 +1,33 @@
+5
+Banan
+49133189
+Merkur
+1982 7 11
+0
+4
+Kaposzta
+0007
+Toth ABC
+2008 6 7
+1
+2.5
+Mango
+0011
+Kaufland
+1998 12 8
+0
+5
+Nutella
+88763412
+Merkur
+1964 1 1
+3
+9
+Ananas
+12387613
+Lidl
+1964 1 1
+0
+8
+
+

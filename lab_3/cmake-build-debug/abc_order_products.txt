@@ -1,0 +1,30 @@
+Ananas:
+	Barcode: 12387613
+	Supplier: Lidl
+	Date of manufacture: 1964/1/1
+	Category: FRUIT
+	Price/piece: 8.00
+Banan:
+	Barcode: 49133189
+	Supplier: Merkur
+	Date of manufacture: 1982/7/11
+	Category: FRUIT
+	Price/piece: 4.00
+Kaposzta:
+	Barcode: 0007
+	Supplier: Toth ABC
+	Date of manufacture: 2008/6/7
+	Category: VEGETABLE
+	Price/piece: 2.50
+Mango:
+	Barcode: 0011
+	Supplier: Kaufland
+	Date of manufacture: 1998/12/8
+	Category: FRUIT
+	Price/piece: 5.00
+Nutella:
+	Barcode: 88763412
+	Supplier: Merkur
+	Date of manufacture: 1964/1/1
+	Category: OTHER
+	Price/piece: 9.00

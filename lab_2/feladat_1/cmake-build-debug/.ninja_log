@@ -72,3 +72,11 @@
 5	264	6991476709324695	CMakeFiles/feladat_1.dir/src/main.c.obj	15d0697ba1319729
 25	288	6991476709580751	CMakeFiles/feladat_1.dir/src/functions.matrix.c.obj	6eda47665db98909
 288	473	6991476711373241	feladat_1.exe	90abf77a41967d86
+2	421	6992238031732277	CMakeFiles/feladat_1.dir/src/functions.matrix.c.obj	6eda47665db98909
+421	975	6992238037229960	feladat_1.exe	90abf77a41967d86
+3	288	6992752295543799	CMakeFiles/feladat_1.dir/src/main.c.obj	15d0697ba1319729
+25	296	6992752295624940	CMakeFiles/feladat_1.dir/src/functions.matrix.c.obj	6eda47665db98909
+296	790	6992752300457422	feladat_1.exe	90abf77a41967d86
+3	192	6992753200171144	CMakeFiles/feladat_1.dir/src/main.c.obj	15d0697ba1319729
+19	227	6992753200525240	CMakeFiles/feladat_1.dir/src/functions.matrix.c.obj	6eda47665db98909
+227	402	6992753202159159	feladat_1.exe	90abf77a41967d86
