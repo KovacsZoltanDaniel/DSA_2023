@@ -16,7 +16,7 @@ void createIntArray(int capacity, IntArray *pArray) {
 
 void printArray(IntArray array) {
     if (isEmpty(array)) {
-        printf("ARRAY_EMPTY_MESSAGE");
+        printf(EMPTY_MESSAGE);
         printf("\n");
         return;
     }
@@ -36,11 +36,100 @@ bool isEmpty(IntArray array) {
 }
 
 int getItemAt(IntArray array, int position) {
-        if(position > array.size){
-            return -1;
+    if(isEmpty(array)){
+        printf(EMPTY_MESSAGE);
+        return INT_MIN;
+    }
+        if(position < 0 || position >= array.size){
+            return INT_MIN;
         }
-        else{
-            printf("%i ", array.elements[position-1]);
+    return array.elements[position];
+}
+
+void insertFirst(IntArray *pArray, int item) {
+    if(isFull(*pArray)){
+        printf(FULL_MESSAGE);
+        return;
+    }
+    for (int i = pArray->size; i > 0 ; --i) {
+        pArray->elements[i] = pArray->elements[i-1];
+    }
+    pArray->elements[0] = item;
+    pArray->size++;
+}
+
+void insertLast(IntArray *pArray, int item) {
+    if(isFull(*pArray)){
+        printf(FULL_MESSAGE);
+        return;
+    }
+    pArray->elements[pArray->size++] = item;
+}
+
+void insertAt(IntArray *pArray, int position, int item) {
+    if(isFull(*pArray)){
+        printf(FULL_MESSAGE);
+        return;
+    }
+    if(position < 0 || position > pArray->size){
+        printf(INVALID_POSITION_MESSAGE);
+        return;
+    }
+    if(position == 0){
+        insertFirst(pArray,item);
+        return;
+    }
+    if(position == pArray->size){
+        insertLast(pArray,item);
+        return;
+    }
+    for (int i = pArray->size; i > position ; --i) {
+        pArray->elements[i] = pArray->elements[i-1];
+    }
+    pArray->elements[position] = item;
+    pArray->size++;
+}
+
+void deleteItemAt(IntArray *pArray, int position) {
+if(isEmpty(*pArray)){
+    printf(EMPTY_MESSAGE);
+    return;
+}
+    for (int i = position; i < pArray->size-1; ++i) {
+        pArray->elements[i] = pArray->elements[i+1];
+    }
+    pArray->elements[pArray->size-1] = 0;
+    pArray->size--;
+}
+
+int search(IntArray pArray, int item) {
+    if(isEmpty(pArray)){
+        printf(EMPTY_MESSAGE);
+        return -1;
+    }
+    for (int i = 0; i < pArray.size; ++i) {
+        if(pArray.elements[i] == item){
+            return i;
         }
-    return 0;
+    }
+    return -1;
+}
+
+bool update(IntArray *pArray, int position, int newItem) {
+    if(isEmpty(*pArray)){
+        printf(EMPTY_MESSAGE);
+        return false;
+    }
+    if (position < 0 || position >= pArray->size){
+        printf(INVALID_POSITION_MESSAGE);
+        return false;
+    }
+    pArray->elements[position] = newItem;
+    return true;
+}
+
+void deallocateIntArray(IntArray *pArray) {
+    free(pArray->elements);
+    pArray->capacity = pArray->size = 0;
+    pArray = NULL;
 }
