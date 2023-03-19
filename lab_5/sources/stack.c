@@ -7,8 +7,8 @@
 void createStack(int capacity, Stack *stack) {
     stack->capacity = capacity;
     stack->top = -1;
-    stack->items = (int *) calloc(stack->capacity, sizeof(int));
-    if(!stack->items){
+    stack->elements = (int *) calloc(stack->capacity, sizeof(int));
+    if(!stack->elements){
         printf(MEMORY_ALLOCATION_ERROR_MESSAGE);
         exit(MEMORY_ALLOCATION_ERROR_CODE);
     }
@@ -17,7 +17,7 @@ void createStack(int capacity, Stack *stack) {
 void destroyStack(Stack *stack) {
     stack->capacity = 0;
     stack->top = -1;
-    free(stack->items);
+    free(stack->elements);
     stack = NULL;
 }
 
@@ -31,30 +31,43 @@ bool isEmpty(Stack stack) {
 
 void push(Stack *stack, int item) {
     if(isFull(*stack)) {
-        printf("FULL_MESSAGE");
+        printf(FULL_MESSAGE);
         return;
     }
-    stack->items[stack->top++] = item;
+    stack->elements[++stack->top] = item;
 }
 
 int pop(Stack *stack) {
     if (isEmpty(*stack)) {
-        printf("EMPTY_MESSAGE");
+        printf(EMPTY_MESSAGE);
         return INT_MIN;
     }
-    int save = stack->items[stack->top];
-    stack->items[stack->top--] = 0;
+    int save = stack->elements[stack->top]; //Legfelso elemet lementsuk
+    stack->elements[stack->top--] = 0;
     return save;
 }
 
 int peek(Stack stack) {
     if (isEmpty(stack)) {
-        printf("EMPTY_MESSAGE");
+        printf(EMPTY_MESSAGE);
         return INT_MIN;
     }
-    return stack.items[stack.top];
+    return stack.elements[stack.top];
 }
 
 int size(Stack stack) {
-    return stack.top+1;
+    return stack.top+1; //mivel "le van maradva " vagyis 0 tol indexelunk
+}
+
+int calculateOperation(int value1, int value2, char *token) {
+    char operation = token[0];
+    switch (operation) {
+        case '+' : return value2 + value1;
+        case '-' : return value2 - value1;
+        case '*' : return value2 * value1;
+        case '/' : return value2 / value1;
+        case '%' : return value2 % value1;
+        default : return 1;
+    }
+    return 0;
 }

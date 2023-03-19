@@ -14,7 +14,7 @@
 typedef struct {
     int capacity;
     int top;
-    int *items;
+    int *elements;
 }Stack;
 /**
 * Initializing the capacity and size of stack,
@@ -68,4 +68,5 @@ int peek(Stack stack);
 * @return
 */
 int size(Stack stack);
+int calculateOperation(int value1, int value2, char *token);
 #endif //LAB_5_STACK_H
