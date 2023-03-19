@@ -67,7 +67,35 @@ int calculateOperation(int value1, int value2, char *token) {
         case '*' : return value2 * value1;
         case '/' : return value2 / value1;
         case '%' : return value2 % value1;
-        default : return 1;
+        default :
+            displayErrorMessage(INVALID_OPERATOR);
+            return STACK_EXCEPTION_ERROR_CODE;
     }
-    return 0;
+
 }
+void displayErrorMessage(enum StackException exception) {
+    switch (exception) {
+        case   INCORRECT_EXPRESSION :
+            printf(INCORRECT_EXPRESSION_MESSAGE);
+            break;
+        case INVALID_OPERATOR :
+            printf(INVALID_OPERATOR_MESSAGE);
+            break;
+        case INVALID_OPERAND :
+            printf(INVALID_OPERAND_MESSAGE);
+            break;
+        default:
+            printf(UNKNOWN_EXCEPTION_MESSAGE);
+            break;
+    }
+    exit(STACK_EXCEPTION_ERROR_CODE);
+}
+
+void checkToken(char *token) {
+    for (int i = 0; i < strlen(token); ++i) {
+        if(!isdigit(token[i])){
+            displayErrorMessage(INVALID_OPERAND);
+        }
+    }
+}
+

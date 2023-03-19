@@ -69,4 +69,7 @@ int peek(Stack stack);
 */
 int size(Stack stack);
 int calculateOperation(int value1, int value2, char *token);
+enum StackException {INCORRECT_EXPRESSION, INVALID_OPERATOR, INVALID_OPERAND};
+void displayErrorMessage(enum StackException exception);
+void checkToken(char *token);
 #endif //LAB_5_STACK_H
