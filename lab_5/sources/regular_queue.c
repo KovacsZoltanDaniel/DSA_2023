@@ -39,7 +39,7 @@ bool isFullqueue(Queue queue) {
 }
 
 bool isEmptyqueue(Queue queue) {
-    return queue.front == -1 && queue.rear == -1;
+    return queue.front == -1 ;
 }
 //FIFO first in first out
 void enqueue(Queue *queue, char *item) {
@@ -58,15 +58,17 @@ void enqueue(Queue *queue, char *item) {
 char *dequeue(Queue *queue) {
     if(isEmptyqueue(*queue)){
         printf(EMPTY_MESSAGE);
-        return EMPTY_MESSAGE;
+        return NULL;
     }
     ///ha csak egy elem van
-    if(queue->front == queue->rear){
         int position = queue->front;
+    if(queue->front == queue->rear){
         queue->front = queue->rear = -1;
-        return queue->elements[position];
     }
-    return queue->elements[queue->front++];
+    else {
+        queue->front++;
+    }
+    return queue->elements[position];
 }
 
 void display(Queue queue) {

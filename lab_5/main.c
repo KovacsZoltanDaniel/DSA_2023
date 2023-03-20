@@ -1,5 +1,6 @@
 #include "stack.h"
 #include "regular_queue.h"
+#include "circular_queue.h"
 
 
 int main() {
@@ -95,6 +96,63 @@ int main() {
         }
     }
     destroyQueue(&queue);
-    return 0;
+
+    //circular queue
+
+    Queue2 intQueue;
+    createQueuecircular(6, &intQueue);
+    bool aha = true;
+    while(aha) {
+        printf("Choose from the following options:"
+               "\n\t- Check if queue is empty: 1"
+               "\n\t- Check if queue is full: 2"
+               "\n\t- Add a new item to the queue: 3"
+               "\n\t- Remove an item from the queue: 4"
+               "\n\t- Display all items waiting in the queue: 5"
+               "\n\t- Exit: 0"
+               "\n\nChoose an option:");
+        int options;
+        scanf("%i", &options);
+        switch (options) {
+            case 0 : {
+                printf("The end");
+                aha = false;
+                break;
+            }
+            case 1 : {
+                printf("The queue is: %s\n", (isEmptycircular(intQueue) ? ("it's EMPTY") : ("it's not EMPTY")));
+                break;
+            }
+            case 2 : {
+                printf("The queue is: %s\n", (isFullcircular(intQueue) ? ("it's FULL") : ("it's not FULL")));
+                break;
+            }
+            case 3 : {
+                printf("Give an integer number:");
+                int value;
+                scanf("%i", &value);
+                enqueuecircular(&intQueue,value);
+                break;
+            }
+            case 4 : {
+               int value = dequeuecircular(&intQueue);
+                if(value == INT_MIN) {
+                    printf(EMPTY_MESSAGE);
+                    break;
+                }
+                printf("The removed number is: %i\n", value);
+                break;
+            }
+            case 5 : {
+                displaycircular(intQueue);
+                break;
+            }
+            default: {
+                printf("INVALID OPTION");
+            }
+        }
+    }
+    destroyQueuecircular(&intQueue);
+return 0;
 }
 

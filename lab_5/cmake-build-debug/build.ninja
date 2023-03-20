@@ -70,6 +70,13 @@ build CMakeFiles/lab_5.dir/sources/regular_queue.c.obj: C_COMPILER__lab_5_Debug 
   OBJECT_DIR = CMakeFiles\lab_5.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_5.dir\sources
 
+build CMakeFiles/lab_5.dir/sources/circular_queue.c.obj: C_COMPILER__lab_5_Debug F$:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_5/sources/circular_queue.c || cmake_object_order_depends_target_lab_5
+  DEP_FILE = CMakeFiles\lab_5.dir\sources\circular_queue.c.obj.d
+  FLAGS = -g -std=gnu2x
+  INCLUDES = -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_5/lab_5 -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/lab_5/headers
+  OBJECT_DIR = CMakeFiles\lab_5.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab_5.dir\sources
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lab_5
@@ -78,7 +85,7 @@ build CMakeFiles/lab_5.dir/sources/regular_queue.c.obj: C_COMPILER__lab_5_Debug 
 #############################################
 # Link the executable lab_5.exe
 
-build lab_5.exe: C_EXECUTABLE_LINKER__lab_5_Debug CMakeFiles/lab_5.dir/main.c.obj CMakeFiles/lab_5.dir/sources/stack.c.obj CMakeFiles/lab_5.dir/sources/regular_queue.c.obj
+build lab_5.exe: C_EXECUTABLE_LINKER__lab_5_Debug CMakeFiles/lab_5.dir/main.c.obj CMakeFiles/lab_5.dir/sources/stack.c.obj CMakeFiles/lab_5.dir/sources/regular_queue.c.obj CMakeFiles/lab_5.dir/sources/circular_queue.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab_5.dir
