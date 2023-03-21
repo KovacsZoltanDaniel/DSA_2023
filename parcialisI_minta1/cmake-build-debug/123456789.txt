@@ -1,0 +1,4 @@
+ kovacs dani
+	CNP: 123456789
+	Date of birth: 2003/5/22
+	Illness: CANCER
