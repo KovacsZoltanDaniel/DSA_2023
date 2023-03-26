@@ -7,54 +7,66 @@
 void printPatient(Patient patient) {
     printf(" %s\n", patient.nev);
     printf("\tCNP: %s\n", patient.CNP);
-    printf("\tDate of birth: %i/%i/%i\n", patient.birthDate.year, patient.birthDate.month,patient.birthDate.day);
     printf("\tIllness: %s\n", getBetegseg(patient.betegsegek));
+    printf("\tDate of birth: %i/%i/%i\n", patient.birthDate.day, patient.birthDate.month,patient.birthDate.year);
 }
 
 void readPatientDetails(Patient *patient) {
-    scanf("\n%[^\n]\n", patient->nev);
+    scanf("\n%[^\n]", patient->nev);
     scanf("%s", patient->CNP);
-    scanf("%i%i%i", &patient->birthDate.year, &patient->birthDate.month, &patient->birthDate.day);
-    scanf("%i", &patient->betegsegek);
+    char disease[20];
+    scanf("%s", disease);
+    patient->betegsegek = getDiseaseByChar(disease);
+    scanf("%d%d%d", &patient->birthDate.day, &patient->birthDate.month, &patient->birthDate.year);
+
 }
 
 char *getBetegseg(enum Betegsegek betegsegek) {
     switch (betegsegek) {
-        case 0 : {
+        case INFLUENZA : {
             return "INFLUENZA";
         }
-        case 1 : {
+        case DIABETES : {
             return "DIABETES";
         }
-        case 2 : {
+        case CANCER : {
             return "CANCER";
         }
-        case 3 : {
+        case HYPERTENSION : {
             return "HYPERTENSION";
         }
-        case 4 : {
+        case ASTHMA : {
             return "ASTHMA";
         }
-        case 5 : {
+        case HEPATITIS : {
             return "HEPATITIS";
         }
-        case 6 : {
+        case DEPRESSION : {
             return "DEPRESSION";
         }
-        case 7 : {
+        case MIGRAINES : {
             return "MIGRAINES";
         }
-        case 8 : {
+        case ANEMIA : {
             return "ANEMIA";
         }
-        case 9 : {
+        case OBESITY : {
             return "OBESITY";
         }
-        case 10 : {
+        case ALLERGIES : {
             return "ALLERGIES";
         }
         default:  {
             return "ERROR";
         }
     }
+}
+
+enum Betegsegek getDiseaseByChar(char *disease) {
+    for (int i = 0; i < 11; ++i) {
+        if(strcmp(getBetegseg(i),disease) == 0) {
+            return i;
+        }
+    }
+    return 0;
 }

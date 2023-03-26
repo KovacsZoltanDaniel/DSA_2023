@@ -9,6 +9,7 @@
 #include <string.h>
 #include <constant.h>
 
+
 enum Betegsegek { INFLUENZA, DIABETES, CANCER,
     HYPERTENSION, ASTHMA, HEPATITIS, DEPRESSION, MIGRAINES,
     ANEMIA, OBESITY, ALLERGIES };
@@ -26,4 +27,5 @@ typedef struct {
 void printPatient(Patient patient);
 void readPatientDetails(Patient *patient);
 char *getBetegseg(enum Betegsegek betegsegek);
+enum Betegsegek getDiseaseByChar(char *disease);
 #endif //PARCIALISI_MINTA1_PATIENT_H
