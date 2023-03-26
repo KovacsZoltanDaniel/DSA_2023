@@ -47,7 +47,7 @@ Patient dequeue(MedicalCenter *medicalCenter) {
         medicalCenter->front = medicalCenter->rear = -1; //ha kiveszem az utolso elemet akkor -1 kell legyen mind2
     }
     else{
-        medicalCenter->front = (medicalCenter->front) % medicalCenter->capacity;
+        medicalCenter->front = (medicalCenter->front +1) % medicalCenter->capacity;
     }
     return save; //hogy melyiket toroltuk
 }
@@ -77,7 +77,7 @@ int findPatient(MedicalCenter medicalCenter, char *cnp) {
     int i = medicalCenter.front;
     if(i != medicalCenter.rear) {
         do {
-            if(strcmp(medicalCenter.patient->CNP, cnp) == 0){
+            if(strcmp(medicalCenter.patient[i].CNP, cnp) == 0){
                 return i;
             }
             i = (i + 1) % medicalCenter.capacity;
