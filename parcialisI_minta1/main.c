@@ -39,7 +39,7 @@ void secondExercise() {
         printf(FILE_OPENING_ERROR_MESSAGE);
         exit(FILE_OPENING_ERROR_CODE);
     }
-    for (int i = 0; i < capacity * 5; ++i) {
+    for (int i = 0; i < capacity * 10; ++i) {
         int option = rand()%2;
         switch (option) {
             case 0 : {
@@ -100,16 +100,10 @@ void secondExercise() {
     }
     printf("older than 50: %i\n", old);
     printf("%i diabetes\n", k);
-    if(isEmpty(medicalCenter)){
-        printf("ok");
-    }
-    else {
-        printf("nook");
-    }
-    /*while ( !isEmpty(medicalCenter)){
+    while ( !isEmpty(medicalCenter)){
         dequeue(&medicalCenter);
         db++;
     }
-    printf("%i ossz\n",db);*/
+    printf("%i ossz\n",db);
     destroyMedicalCenter(&medicalCenter);
 }
