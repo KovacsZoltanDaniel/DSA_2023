@@ -12,7 +12,7 @@ int main() {
 
     readStudentsDate(&student);
 
-    printStudentsDate(student);
+    printStudentsDate(&student);
 
     freopen("CON", "r", stdin);
     return 0;

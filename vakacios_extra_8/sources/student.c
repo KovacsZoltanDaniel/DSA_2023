@@ -10,16 +10,17 @@ void createStudentsDate(int maxAdat, STUDENT *students) {
     students->adatok = (student *) malloc(students->maxAdat * sizeof(student));
 }
 
-void printStudentsDate(STUDENT students) {
+void printStudentsDate(STUDENT *students) {
     printf("the birth date of the students:\n");
-    for (int i = 0; i < students.size; ++i) {
-        printf("%i/%i/%i\n", students.adatok->year, students.adatok->month, students.adatok->day);
+    for (int i = 0; i < students->size; ++i) {
+        printf("%i/%i/%i\n", students[i].adatok->year, students[i].adatok->month, students[i].adatok->day);
     }
     printf("\n");
 }
 
 void readStudentsDate(STUDENT *students) {
-    for (int i = 0; i < students->size; ++i) {
-        scanf("%i%i%i", &students->adatok->year, &students->adatok->month, &students->adatok->day);
+    for (int i = 0; i < students->maxAdat; ++i) {
+        students->size++;
+        scanf("%i%i%i\n", &students[i].adatok->year, &students[i].adatok->month, &students[i].adatok->day);
     }
 }

@@ -19,5 +19,5 @@ typedef struct {
 } STUDENT;
 void createStudentsDate(int maxAdat, STUDENT *students);
 void readStudentsDate(STUDENT *students);
-void printStudentsDate(STUDENT students);
+void printStudentsDate(STUDENT *students);
 #endif //VAKACIOS_EXTRA_8_STUDENT_H
