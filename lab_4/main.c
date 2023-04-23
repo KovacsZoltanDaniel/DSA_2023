@@ -45,4 +45,5 @@ int main() {
 
     deallocateIntArray(&array);
     return 0;
+
 }
