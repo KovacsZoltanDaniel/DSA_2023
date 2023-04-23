@@ -1,7 +1,4 @@
 # ninja log v5
-3	162	7023004416540408	CMakeFiles/lab_8.dir/main.c.obj	d15e2cede8ea28ec
-23	467	7022980577281549	CMakeFiles/lab_8.dir/sources/linked.list.c.obj	b1085d4358c4616
-163	316	7023004418033602	lab_8.exe	106101983da3e807
 1	133	7038575819421086	CMakeFiles/lab_8.dir/main.c.obj	a01ca8ace26db140
 9	145	7038575819551093	CMakeFiles/lab_8.dir/sources/linked.list.c.obj	62c5c70745a60922
 146	305	7038575821109903	lab_8.exe	be027ffb85a57429
