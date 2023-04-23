@@ -28,50 +28,48 @@ void firstExercise() {
 }
 
 void secondExercise() {
-    int capacity, counter = 0, noPatients = 0, old = 0, k=0,db=0;
+    int capacity, counter = 0, noPatients = 0, old = 0, k = 0, db = 0;
     printf("capacity: ");
     scanf("%i", &capacity);
     MedicalCenter medicalCenter;
     createMedicalCenter(capacity, &medicalCenter);
     srand(time(0));
     display(medicalCenter);
-    if(!freopen("input.txt", "r", stdin)){
+    if (!freopen("input.txt", "r", stdin)) {
         printf(FILE_OPENING_ERROR_MESSAGE);
         exit(FILE_OPENING_ERROR_CODE);
     }
     for (int i = 0; i < capacity * 10; ++i) {
-        int option = rand()%2;
+        int option = rand() % 2;
         switch (option) {
             case 0 : {
-                if(!isFull(medicalCenter)){
+                if (!isFull(medicalCenter)) {
                     //beolvasas
                     Patient patient;
                     readPatientDetails(&patient);
                     //varakozas
                     enqueue(&medicalCenter, patient);
                     printf("the following patient joined the queue: ");
-                    printf("%s\n",patient.nev);
-                    if(2023- patient.birthDate.year >= 50){
-                        old ++;
+                    printf("%s\n", patient.nev);
+                    if (2023 - patient.birthDate.year >= 50) {
+                        old++;
                     }
-                    if(patient.betegsegek == DIABETES){
+                    if (patient.betegsegek == DIABETES) {
                         printf("%s with diabetes\n", patient.nev);
                         k++;
                     }
-                }
-                else {
+                } else {
                     counter++;
                 }
                 break;
             }
             case 1 : {
-                if(!isEmpty(medicalCenter)){
-                   Patient patient = dequeue(&medicalCenter);
+                if (!isEmpty(medicalCenter)) {
+                    Patient patient = dequeue(&medicalCenter);
                     printf("the following patient can go home: ");
-                    printf("%s\n",patient.nev);
+                    printf("%s\n", patient.nev);
                     db++;
-                }
-                else {
+                } else {
                     noPatients++;
                 }
                 break;
@@ -79,31 +77,28 @@ void secondExercise() {
             default:
                 printf("Invalid option");
         }
-        /*if(i % 3 == 0){
-            display(medicalCenter);
-        }*/
+
     }
     printf("\n\nStill waiting:.....\n");
     freopen("CON", "r", stdin);
     display(medicalCenter);
-    printf("number of cases when there was no room: %i\n",counter);
-    printf("number of cases when there was no patients: %i\n",noPatients);
+    printf("number of cases when there was no room: %i\n", counter);
+    printf("number of cases when there was no patients: %i\n", noPatients);
     printf("add a cnp number: ");
     char cnp[14];
     scanf("%s", cnp);
-    int pos = findPatient(medicalCenter,cnp);
-    if(pos != -1){
+    int pos = findPatient(medicalCenter, cnp);
+    if (pos != -1) {
         printf("The patient is still waiting\n");
-    }
-    else {
+    } else {
         printf("There is no patient with tis cnp\n");
     }
     printf("older than 50: %i\n", old);
     printf("%i diabetes\n", k);
-    while ( !isEmpty(medicalCenter)){
+    while (!isEmpty(medicalCenter)) {
         dequeue(&medicalCenter);
         db++;
     }
-    printf("%i ossz\n",db);
+    printf("%i ossz\n", db);
     destroyMedicalCenter(&medicalCenter);
 }

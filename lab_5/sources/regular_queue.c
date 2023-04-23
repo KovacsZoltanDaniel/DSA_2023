@@ -39,7 +39,7 @@ bool isFullqueue(Queue queue) {
 }
 
 bool isEmptyqueue(Queue queue) {
-    return queue.front == -1 ;
+    return queue.front == -1  ;
 }
 //FIFO first in first out
 void enqueue(Queue *queue, char *item) {

@@ -1,0 +1,9 @@
+# ninja log v5
+1	119	7038706759167138	CMakeFiles/vakacios_extra_8.dir/main.c.obj	6934cc553911e04c
+2	96	7038707049688159	CMakeFiles/vakacios_extra_8.dir/sources/student.c.obj	2dfb85843f1c2d77
+96	231	7038707050998246	vakacios_extra_8.exe	8f2f13b5dfaa23e3
+3	127	7038708288545552	CMakeFiles/vakacios_extra_8.dir/main.c.obj	6934cc553911e04c
+10	130	7038708288555545	CMakeFiles/vakacios_extra_8.dir/sources/student.c.obj	2dfb85843f1c2d77
+130	257	7038708289805622	vakacios_extra_8.exe	8f2f13b5dfaa23e3
+3	93	7038708435896614	CMakeFiles/vakacios_extra_8.dir/main.c.obj	6934cc553911e04c
+93	213	7038708437046698	vakacios_extra_8.exe	8f2f13b5dfaa23e3
