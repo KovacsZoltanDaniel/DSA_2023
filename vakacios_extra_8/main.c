@@ -9,8 +9,11 @@ int main() {
     }
     scanf("%i", &n);
     createStudentsDate(n, &student);
+
     readStudentsDate(&student);
+
     printStudentsDate(student);
+
     freopen("CON", "r", stdin);
     return 0;
 }
