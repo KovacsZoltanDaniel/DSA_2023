@@ -2,18 +2,19 @@
 
 int main() {
     STUDENT student;
-    int n;
+    int  maxAdat = 10;
     if (!freopen("datumok.txt", "r", stdin)) {
         printf(FILE_OPENING_ERROR_MESSAGE);
         exit(FILE_OPENING_ERROR_CODE);
     }
-    scanf("%i", &n);
-    createStudentsDate(n, &student);
-
-    readStudentsDate(&student);
-
-    printStudentsDate(&student);
-
+    createStudentsDate(maxAdat, &student);
+    printStudentsDate(student);
+    while (!isFulll(student)) {
+        readStudentsDate(&student);
+    }
+    printStudentsDate(student);
+    printAdultStudentsCount(student);
     freopen("CON", "r", stdin);
+    destroyStudents(&student);
     return 0;
 }

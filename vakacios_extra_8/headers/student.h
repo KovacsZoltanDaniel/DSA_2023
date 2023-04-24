@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <constant.h>
+#include <stdbool.h>
 typedef struct {
     int year;
     int month;
@@ -18,6 +19,11 @@ typedef struct {
     student *adatok;
 } STUDENT;
 void createStudentsDate(int maxAdat, STUDENT *students);
-void readStudentsDate(STUDENT *students);
-void printStudentsDate(STUDENT *students);
+void readStudentsDate( STUDENT *students);
+void printStudentsDate(STUDENT students);
+bool isFulll(STUDENT students);
+bool isEmptyy(STUDENT students) ;
+void printAdultStudentsCount(STUDENT students);
+bool isEighteenOrAbove(student s, int year, int month, int day);
+void destroyStudents(STUDENT *students);
 #endif //VAKACIOS_EXTRA_8_STUDENT_H
