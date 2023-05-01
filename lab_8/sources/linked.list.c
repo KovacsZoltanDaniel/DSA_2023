@@ -5,7 +5,7 @@
 #include "../headers/linked.list.h"
 
 Node *newNode(int new_data) {
-    Node *new_node = (Node *) malloc(sizeof(Node));
+    Node *new_node = (Node *) malloc(1 * sizeof(Node));
     if (!new_node) {
         printf(MEMORY_ALLOCATION_ERROR_MESSAGE);
         exit(MEMORY_ALLOCATION_ERROR_CODE);
@@ -39,12 +39,14 @@ void insertAfter(Node *prev_ref, int new_data) {
 
 void insertAtEnd(Node **head_ref, int new_data) {
     Node *new_node = newNode(new_data);
-    Node *last = *head_ref;
     if (isEmpty(*head_ref)) {
         *head_ref = new_node;
         return;
     }
-    while (last->next != NULL) last = last->next;
+    Node *last = *head_ref;
+    while (last->next != NULL) {
+        last = last->next;
+    }
     last->next = new_node;
 }
 
@@ -102,14 +104,39 @@ bool searchNode(Node *head_ref, int key) {
     return false;
 }
 
-void sortLinkedList(Node **head_ref) {
-
+void sortLinkedList(Node *head_ref) {
+    if(isEmpty(head_ref)){
+        printf(NULL_POINTER_EXCEPTION_ERROR_MESSAGE);
+        return;
+    }
+    Node *first = head_ref;
+    while (first != NULL){
+        Node *current = first->next;
+        while (current != NULL){
+            if(first->data > current->data){
+                int aux = first->data;
+                first->data = current->data;
+                current->data = aux;
+            }
+            current = current->next;
+        }
+        first = first->next;
+    }
 }
 
 void printList(Node *node) {
     while (node != NULL) {
-        printf("%4d ", node->data);
+        printf("%d -> ", node->data);
         node = node->next;
     }
+    printf("NULL\n");
+}
 
+void freeList(Node **head) {
+    while (*head != NULL){
+        Node *temp = *head;
+        *head = (*head)->next;
+        free(temp);
+    }
+    *head = NULL;
 }

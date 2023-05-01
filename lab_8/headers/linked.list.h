@@ -72,10 +72,11 @@ bool searchNode(Node* head_ref, int key);
 * Sort the values present in the list in ascending order
 * @param head_ref
 */
-void sortLinkedList(Node** head_ref);
+void sortLinkedList(Node* head_ref);
 /**
 * Print all elements of teh list
 * @param node
 */
 void printList(Node* node);
+void freeList(Node **head);
 #endif //LAB_8_LINKED_LIST_H
