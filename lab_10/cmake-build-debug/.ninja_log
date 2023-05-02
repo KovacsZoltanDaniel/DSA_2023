@@ -1,0 +1,6 @@
+# ninja log v5
+0	146	7047198773846084	CMakeFiles/lab_10.dir/main.c.obj	3fd1ad08ec6b736
+2	82	7047198976629454	CMakeFiles/lab_10.dir/sources/bst_person.c.obj	3921dde4078b6166
+83	207	7047198977840807	lab_10.exe	7011d13f98c1ee8d
+2	84	7047199239585350	CMakeFiles/lab_10.dir/sources/bst_person.c.obj	3921dde4078b6166
+84	177	7047199240475551	lab_10.exe	7011d13f98c1ee8d
