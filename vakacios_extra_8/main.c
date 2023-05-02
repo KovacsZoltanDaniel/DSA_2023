@@ -4,8 +4,8 @@ int main() {
     STUDENT student;
     int  maxAdat = 10;
     if (!freopen("datumok.txt", "r", stdin)) {
-        printf(FILE_OPENING_ERROR_MESSAGE);
-        exit(FILE_OPENING_ERROR_CODE);
+        printf("FILE_OPENING_ERROR_MESSAGE");
+        exit("FILE_OPENING_ERROR_CODE");
     }
     createStudentsDate(maxAdat, &student);
     printStudentsDate(student);
