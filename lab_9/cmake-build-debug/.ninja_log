@@ -1,14 +1,4 @@
 # ninja log v5
-1	115	7047158274114987	CMakeFiles/lab_9.dir/main.c.obj	d2c7c78e5b273ea7
-2	82	7047158479081449	CMakeFiles/lab_9.dir/sources/linkedd_list.c.obj	fbe91220b86fa26e
-83	197	7047158480181713	lab_9.exe	6b9cac804cc36f80
-11	130	7047161245486149	CMakeFiles/lab_9.dir/main.c.obj	d2c7c78e5b273ea7
-3	136	7047161245556125	CMakeFiles/lab_9.dir/sources/linkedd_list.c.obj	fbe91220b86fa26e
-136	233	7047161246486335	lab_9.exe	6b9cac804cc36f80
-2	84	7047162244745174	CMakeFiles/lab_9.dir/sources/linkedd_list.c.obj	fbe91220b86fa26e
-84	178	7047162245647401	lab_9.exe	6b9cac804cc36f80
-9	98	7047170529985910	CMakeFiles/lab_9.dir/main.c.obj	d2c7c78e5b273ea7
-2	101	7047170530015898	CMakeFiles/lab_9.dir/sources/linkedd_list.c.obj	fbe91220b86fa26e
-102	212	7047170531086133	lab_9.exe	6b9cac804cc36f80
 2	73	7047170647913848	CMakeFiles/lab_9.dir/main.c.obj	d2c7c78e5b273ea7
+2	101	7047170530015898	CMakeFiles/lab_9.dir/sources/linkedd_list.c.obj	fbe91220b86fa26e
 73	166	7047170648793905	lab_9.exe	6b9cac804cc36f80
