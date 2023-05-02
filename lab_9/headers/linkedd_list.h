@@ -1,11 +1,13 @@
 //
-// Created by Dani on 2023. 04. 25..
+// Created by Dani on 2023. 05. 02..
 //
 
-#ifndef VAKACIOS_EXTRA_8_LINKED_LIST_H
-#define VAKACIOS_EXTRA_8_LINKED_LIST_H
+#ifndef LAB_9_LINKEDD_LIST_H
+#define LAB_9_LINKEDD_LIST_H
 #include <stdbool.h>
 #include <stdio.h>
+#include <constant.h>
+#include <stdlib.h>
 // Create a node
 typedef struct Node{
     int data;
@@ -68,7 +70,7 @@ bool searchNode(Node* head_ref, int key);
 * Sort the values present in the list in ascending order
 * @param head_ref
 */
-void sortLinkedList(Node** head_ref);
+void sortLinkedList(Node* head_ref);
 /**
 * Print all elements of teh list
 * @param node
@@ -80,4 +82,4 @@ void orderedList(Node** head_ref, int new_data);
 * @param new_data
 */
 void printList(Node* node);
-#endif //VAKACIOS_EXTRA_8_LINKED_LIST_H
+#endif //LAB_9_LINKEDD_LIST_H

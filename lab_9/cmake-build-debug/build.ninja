@@ -56,8 +56,8 @@ build CMakeFiles/lab_9.dir/main.c.obj: C_COMPILER__lab_9_Debug F$:/Egyetem/I_ev/
   OBJECT_DIR = CMakeFiles\lab_9.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_9.dir
 
-build CMakeFiles/lab_9.dir/sources/linked_list.c.obj: C_COMPILER__lab_9_Debug F$:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/DSA_2023/lab_9/sources/linked_list.c || cmake_object_order_depends_target_lab_9
-  DEP_FILE = CMakeFiles\lab_9.dir\sources\linked_list.c.obj.d
+build CMakeFiles/lab_9.dir/sources/linkedd_list.c.obj: C_COMPILER__lab_9_Debug F$:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/DSA_2023/lab_9/sources/linkedd_list.c || cmake_object_order_depends_target_lab_9
+  DEP_FILE = CMakeFiles\lab_9.dir\sources\linkedd_list.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu2x
   INCLUDES = -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/DSA_2023/lab_9/lab_9 -IF:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/DSA_2023/lab_9/headers
   OBJECT_DIR = CMakeFiles\lab_9.dir
@@ -71,7 +71,7 @@ build CMakeFiles/lab_9.dir/sources/linked_list.c.obj: C_COMPILER__lab_9_Debug F$
 #############################################
 # Link the executable lab_9.exe
 
-build lab_9.exe: C_EXECUTABLE_LINKER__lab_9_Debug CMakeFiles/lab_9.dir/main.c.obj CMakeFiles/lab_9.dir/sources/linked_list.c.obj
+build lab_9.exe: C_EXECUTABLE_LINKER__lab_9_Debug CMakeFiles/lab_9.dir/main.c.obj CMakeFiles/lab_9.dir/sources/linkedd_list.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab_9.dir
