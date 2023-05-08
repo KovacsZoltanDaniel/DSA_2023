@@ -125,9 +125,10 @@ void sortLinkedList(Node *head_ref) {
 }
 
 void printList(Node *node) {
-    while (node != NULL) {
-        printf("%d -> ", node->data);
-        node = node->next;
+    Node * temp = node;
+    while (temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
     }
     printf("NULL\n");
 }

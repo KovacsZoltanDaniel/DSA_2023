@@ -61,12 +61,12 @@ int main() {
 }
 
 Node *createList(int number) {
-    Node *head1 = NULL;
+    Node *head = NULL;
     while (number != 0) {
-        insertAtEnd(&head1, number % 10);
+        insertAtEnd(&head, number % 10);
         number /= 10;
     }
-    return head1;
+    return head;
 }
 
 Node *addition(Node **first, Node **second) {
