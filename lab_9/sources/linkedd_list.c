@@ -131,6 +131,7 @@ void orderedList(Node **head_ref, int new_data) {
     uj = newNode(new_data);
     if(isEmpty(*head_ref)){
         *head_ref = uj;
+        return;
     }
      if((*head_ref)->data >= uj->data){
         insertAtBeginning(head_ref,new_data);
