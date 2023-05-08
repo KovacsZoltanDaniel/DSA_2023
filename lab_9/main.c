@@ -17,10 +17,11 @@ int main() {
     sortLinkedList(head);
     printList(head);
     number = 2345234;
-    head = NULL;
+    freeList(&head);
     head = createList(number);
     printf("\nRendezett lista: ");
     printList(head);
+    freeList(&head);
     return 0;
 }
 Node *createList(int number) {

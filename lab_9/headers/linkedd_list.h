@@ -82,4 +82,5 @@ void orderedList(Node** head_ref, int new_data);
 * @param new_data
 */
 void printList(Node* node);
+void freeList(Node **head);
 #endif //LAB_9_LINKEDD_LIST_H

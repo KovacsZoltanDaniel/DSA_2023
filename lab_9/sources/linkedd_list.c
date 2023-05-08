@@ -156,3 +156,11 @@ void printList(Node *node) {
     printf("NULL\n");
 
 }
+void freeList(Node **head) {
+    while (*head != NULL){
+        Node *temp = *head;
+        *head = (*head)->next;
+        free(temp);
+    }
+    *head = NULL;
+}
