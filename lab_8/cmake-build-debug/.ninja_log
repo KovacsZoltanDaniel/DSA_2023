@@ -1,13 +1,11 @@
 # ninja log v5
-3	159	7046746849954286	CMakeFiles/lab_8.dir/main.c.obj	35f96edcc59b91f3
-3	163	7046746049452668	CMakeFiles/lab_8.dir/sources/linked.list.c.obj	970ccbe6c9aaac06
-160	331	7046746851614759	lab_8.exe	6e3cc04d7dc10f9c
-8	285	7052703378588838	CMakeFiles/lab_8.dir/main.c.obj	35f96edcc59b91f3
-14	285	7052703378588838	CMakeFiles/lab_8.dir/sources/linked.list.c.obj	970ccbe6c9aaac06
-285	561	7052703381307871	lab_8.exe	6e3cc04d7dc10f9c
-1	95	7052710639966598	CMakeFiles/lab_8.dir/main.c.obj	35f96edcc59b91f3
-95	212	7052710641098556	lab_8.exe	6e3cc04d7dc10f9c
-2	90	7052710893215610	CMakeFiles/lab_8.dir/main.c.obj	35f96edcc59b91f3
-90	198	7052710894268384	lab_8.exe	6e3cc04d7dc10f9c
 3	86	7052716407038930	CMakeFiles/lab_8.dir/main.c.obj	35f96edcc59b91f3
+14	285	7052703378588838	CMakeFiles/lab_8.dir/sources/linked.list.c.obj	970ccbe6c9aaac06
 86	187	7052716408026423	lab_8.exe	6e3cc04d7dc10f9c
+2	86	7052772993407818	CMakeFiles/lab_8.dir/main.c.obj	35f96edcc59b91f3
+86	184	7052772994358043	lab_8.exe	6e3cc04d7dc10f9c
+3	143	7052773834460610	CMakeFiles/lab_8.dir/sources/linked.list.c.obj	970ccbe6c9aaac06
+143	312	7052773836074484	lab_8.exe	6e3cc04d7dc10f9c
+4	159	7052777726794526	CMakeFiles/lab_8.dir/sources/linked.list.c.obj	970ccbe6c9aaac06
+22	204	7052777727263235	CMakeFiles/lab_8.dir/main.c.obj	35f96edcc59b91f3
+204	368	7052777728800031	lab_8.exe	6e3cc04d7dc10f9c
