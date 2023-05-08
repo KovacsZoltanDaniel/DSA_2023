@@ -30,13 +30,13 @@ bool isEmpty(Node *head);
 * @param head_ref
 * @param new_data
 */
-void insertAtBeginning(Node** head_ref, int new_data);
+//void insertAtBeginning(Node** head_ref, int new_data);
 /**
 * Insert new node after a specific node
 * @param prev_ref
 * @param new_data
 */
-void insertAfter(Node* prev_ref, int new_data);
+//void insertAfter(Node* prev_ref, int new_data);
 /**
 * Insertg new node at the end of the list
 * @param head_ref

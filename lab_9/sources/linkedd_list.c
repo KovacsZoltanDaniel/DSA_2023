@@ -104,7 +104,6 @@ bool searchNode(Node *head_ref, int key) {
     return false;
 }
 
-
 void sortLinkedList(Node *head_ref) {
     Node *current = head_ref, *index = NULL;
     int temp;
@@ -130,29 +129,21 @@ void sortLinkedList(Node *head_ref) {
 void orderedList(Node **head_ref, int new_data) {
     Node *uj,*last, *prev;
     uj = newNode(new_data);
-    if(*head_ref == NULL){
-        (*head_ref) = uj;
+    if(isEmpty(*head_ref)){
+        *head_ref = uj;
     }
-    else if((*head_ref)->data >= uj->data){
-        uj->next = (*head_ref);
-        (*head_ref) = uj;
+     if((*head_ref)->data >= uj->data){
+        insertAtBeginning(head_ref,new_data);
+        return;
     }
-    else {
-        last = (*head_ref);
+        last = *head_ref;
         prev = NULL;
-        while (last != NULL && last->data <= uj->data){
+        while (last != NULL && last->data <= new_data){
             prev = last;
             last = last->next;
         }
-        if(last == NULL){
-            prev->next = uj;
-            last = uj;
-        }
-        else {
-            prev->next = uj;
             uj->next = last;
-        }
-    }
+            prev->next = uj;
 }
 
 void printList(Node *node) {
