@@ -8,15 +8,10 @@
 #include <stdlib.h>
 #include <constant.h>
 #include <string.h>
-typedef struct {
-    int year;
-    int month;
-    int day;
-}Date;
+
 typedef struct {
     char nev[16];
-    Date data;
-    int gender;
+    float parc_atlag, teszt_atlag, laborjegy;
 }Person;
 typedef struct Node{
     Person info;

@@ -11,13 +11,28 @@ int convertListNumber(Node *node);
 void deleteDigit(Node **node, int digit);
 
 int main() {
-    int num1 = 230, num2 = 987;
+    //teszt
+    int num1 = 238, num2 = 882;
     Node *node1 = NULL, *node2 = NULL, *result = NULL;//headek
     node1 = createList(num1);
     printList(node1);
     node2 = createList(num2);
     printList(node2);
-    //addition
+    int db = 0;
+    Node *node3 = NULL;
+    node3 = node2;
+    while (node1 != NULL) {
+        node2 = node3;
+        while (node2 != NULL){
+            if (node1->data == node2->data) {
+                db++;
+            }
+            node2 = node2->next;
+        }
+        node1 = node1->next;
+    }
+    printf("%i", db);
+    /*//addition
     result = addition(&node1, &node2);
     printf("the sum of the two integers: ");
     printList(result);
@@ -54,7 +69,7 @@ int main() {
     printf("after sorting: ");
     sortLinkedList(result);
     printList(result);
-    freeList(&result);
+    freeList(&result);*/
     freeList(&node1);
     freeList(&node2);
     return 0;
@@ -112,9 +127,9 @@ int convertListNumber(Node *node) {
 
 void addZeros(Node *node) {
     Node *temp = node;
-    while (temp != NULL){
-        if(temp->data % 2 == 0){
-            insertAfter(temp,0);
+    while (temp != NULL) {
+        if (temp->data % 2 == 0) {
+            insertAfter(temp, 0);
             temp = temp->next;
         }
         temp = temp->next;
@@ -122,7 +137,8 @@ void addZeros(Node *node) {
 }
 
 void deleteDigit(Node **node, int digit) {
-    while (searchNode(*node,digit)){
-        deleteNode(node,digit);
+    while (searchNode(*node, digit)) {
+        deleteNode(node, digit);
     }
 }
+

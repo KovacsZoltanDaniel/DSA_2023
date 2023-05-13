@@ -3,7 +3,6 @@
 //
 
 #include "../headers/linked.list.h"
-
 Node *newNode(int new_data) {
     Node *new_node = (Node *) malloc(1 * sizeof(Node));
     if (!new_node) {
@@ -14,6 +13,7 @@ Node *newNode(int new_data) {
     new_node->next = NULL;
     return new_node;
 }
+
 
 bool isEmpty(Node *head) {
     return head == NULL;

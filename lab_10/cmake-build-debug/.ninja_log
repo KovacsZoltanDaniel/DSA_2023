@@ -1,6 +1,7 @@
 # ninja log v5
-0	146	7047198773846084	CMakeFiles/lab_10.dir/main.c.obj	3fd1ad08ec6b736
-2	82	7047198976629454	CMakeFiles/lab_10.dir/sources/bst_person.c.obj	3921dde4078b6166
-83	207	7047198977840807	lab_10.exe	7011d13f98c1ee8d
-2	84	7047199239585350	CMakeFiles/lab_10.dir/sources/bst_person.c.obj	3921dde4078b6166
-84	177	7047199240475551	lab_10.exe	7011d13f98c1ee8d
+4	154	7053239120125611	CMakeFiles/lab_10.dir/main.c.obj	3fd1ad08ec6b736
+3	154	7053236127651457	CMakeFiles/lab_10.dir/sources/bst_person.c.obj	3921dde4078b6166
+1	244	7054417156396810	build.ninja	a88282fa7b0ba80
+155	336	7053239121857721	lab_10.exe	7011d13f98c1ee8d
+18	140	7053187240016131	CMakeFiles/lab_10.dir/sources/bst.c.obj	44c628e023f9d6c4
+18	160	7053220814360586	CMakeFiles/lab_10.dir/sources/binary_tree.c.obj	94c08369f987ab66

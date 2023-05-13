@@ -3,6 +3,8 @@
 //
 
 #include "../headers/bst_person.h"
+#include "linkedd_list.h"
+
 
 Node *createNewNode(Person newData) {
     Node *newNode = malloc(sizeof(Node));
@@ -13,6 +15,7 @@ Node *createNewNode(Person newData) {
     newNode->info = newData;
     newNode->left = NULL;
     newNode->right = NULL;
+    newNode->info.laborjegy = newNode->info.parc_atlag * 0.6 + newNode->info.teszt_atlag * 0.4;
     return newNode;
 }
 
@@ -21,7 +24,7 @@ Node *insert(Node *node, Person key) {
     if (node == NULL)
         return createNewNode(key);
 //find the right place and insert the node
-    if (strcmp(key.nev, node->info.nev) < 0)
+    if (node->info.laborjegy > key.laborjegy)
         node->left = insert(node->left, key);
     else
         node->right = insert(node->right, key);
@@ -31,6 +34,6 @@ Node *insert(Node *node, Person key) {
 void inorderTraversal(Node *root) {
     if (root == NULL) return;
     inorderTraversal(root->left);
-    printf("%s \n", root->info.nev);
+    printf("%s \n %.2f\n", root->info.nev,root->info.laborjegy);
     inorderTraversal(root->right);
 }

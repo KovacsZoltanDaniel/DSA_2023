@@ -1,25 +1,13 @@
 #include "linkedd_list.h"
 
-Node * createList(int number);
-int concatenateDigits(Node *head, int order);
+Node *createList(int number);
+
+int convertListNumber(Node *node);
+
+int reversed(int number);
 
 int main() {
-    int num = 437;
     Node *head = NULL;
-    while (num != 0) {
-        int digit = num % 10;
-        insertAtEnd(&head, digit);
-        num /= 10;
-    }
-    printf("A lista elemei: ");
-    printList(head);
-
-    int smallest = concatenateDigits(head, 1); // legkisebb szám
-    int largest = concatenateDigits(head, 2); // legnagyobb szám
-
-    printf("A legkisebb szam: %d\n", smallest);
-    printf("A legnagyobb szam: %d\n", largest);
-
     freeList(&head);
     int number;
     scanf("%i", &number);
@@ -33,6 +21,10 @@ int main() {
     printf("\nRendezes utan: ");
     sortLinkedList(head);
     printList(head);
+    int result = convertListNumber(head);
+    printf("\na legnagyobb szam: %i", result);
+    int result2 = reversed(result);
+    printf("\na legkisebb szam: %i",result2);
     number = 2345234;
     freeList(&head);
     head = createList(number);
@@ -41,31 +33,33 @@ int main() {
     freeList(&head);
     return 0;
 }
+
 Node *createList(int number) {
     Node *head = NULL;
-    while (number != 0){
+    while (number != 0) {
         orderedList(&head, number % 10);
         number /= 10;
     }
     return head;
 }
 
-int concatenateDigits(Node *head, int order) {
-    int number = 0;
-    Node *current = head;
-    while (current != NULL) {
-        number = number * 10 + current->data;
-        current = current->next;
+int convertListNumber(Node *node) {
+    int sum = 0, p = 1;
+    Node *temp = node;
+    while (temp != NULL) {
+        sum = p * temp->data + sum;
+        p *= 10;
+        temp = temp->next;
     }
-    if (order == 1) { // növekvő sorrendben
-        return number;
-    } else { // csökkenő sorrendben
-        int reversedNumber = 0;
-        while (number != 0) {
-            int digit = number % 10;
-            reversedNumber = reversedNumber * 10 + digit;
-            number /= 10;
-        }
-        return reversedNumber;
-    }
+    return sum;
 }
+
+int reversed(int number) {
+    int rev = 0;
+    while (number > 0) {
+        rev = rev * 10 + number % 10;
+        number = number / 10;
+    }
+    return rev;
+}
+
