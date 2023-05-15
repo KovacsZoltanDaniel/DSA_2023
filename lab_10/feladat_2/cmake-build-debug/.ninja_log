@@ -1,0 +1,15 @@
+# ninja log v5
+6	433	7058531441318949	CMakeFiles/feladat_2.dir/sources/bst.c.obj	3df442cb893983c7
+0	440	7058531441358968	CMakeFiles/feladat_2.dir/main.c.obj	40c8371ae4e84fb8
+441	829	7058531445199323	feladat_2.exe	606edb17597fbc46
+3	92	7058542324056039	CMakeFiles/feladat_2.dir/main.c.obj	40c8371ae4e84fb8
+8	120	7058542324336034	CMakeFiles/feladat_2.dir/sources/bst.c.obj	3df442cb893983c7
+121	239	7058542325476117	feladat_2.exe	606edb17597fbc46
+2	84	7058542552604906	CMakeFiles/feladat_2.dir/main.c.obj	40c8371ae4e84fb8
+85	189	7058542553604978	feladat_2.exe	606edb17597fbc46
+3	85	7058542949185720	CMakeFiles/feladat_2.dir/main.c.obj	40c8371ae4e84fb8
+86	200	7058542950295766	feladat_2.exe	606edb17597fbc46
+4	99	7058543268571636	CMakeFiles/feladat_2.dir/main.c.obj	40c8371ae4e84fb8
+100	236	7058543269861726	feladat_2.exe	606edb17597fbc46
+3	99	7058543662757411	CMakeFiles/feladat_2.dir/main.c.obj	40c8371ae4e84fb8
+99	213	7058543663847509	feladat_2.exe	606edb17597fbc46

@@ -1,9 +1,4 @@
 # ninja log v5
-7	90	7057605777279712	CMakeFiles/feladat_1.dir/sources/binary_tree.c.obj	aaebcf04c96ebc7f
-91	193	7057605778270171	feladat_1.exe	816b6e847f27f8e2
-3	86	7057605777239702	CMakeFiles/feladat_1.dir/main.c.obj	1771341601847606
-1	121	7058477756181732	CMakeFiles/feladat_1.dir/main.c.obj	55c249a04cbf7bad
 8	138	7058477756381736	CMakeFiles/feladat_1.dir/sources/binary_tree.c.obj	a752543d3a4adcd7
-138	307	7058477758037848	feladat_1.exe	9cc40a4551e05962
-3	90	7058488843111790	CMakeFiles/feladat_1.dir/main.c.obj	55c249a04cbf7bad
 90	215	7058488844301870	feladat_1.exe	9cc40a4551e05962
+3	90	7058488843111790	CMakeFiles/feladat_1.dir/main.c.obj	55c249a04cbf7bad
