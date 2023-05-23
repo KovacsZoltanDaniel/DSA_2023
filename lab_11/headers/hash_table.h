@@ -5,6 +5,9 @@
 #ifndef FELADAT_4_HASH_TABLE_H
 #define FELADAT_4_HASH_TABLE_H
 #define CAPACITY 31
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
 typedef struct {
     int key;
     int data;
