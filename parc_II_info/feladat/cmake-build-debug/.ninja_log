@@ -1,0 +1,11 @@
+# ninja log v5
+15	95	7065317712198795	CMakeFiles/feladat.dir/sources/catalog.c.obj	f4838d96bd387229
+3	79	7065340673898127	CMakeFiles/feladat.dir/main.c.obj	a169aaf05afaef49
+8	95	7065340674078159	CMakeFiles/feladat.dir/sources/movie.c.obj	c571b5cb5dea7f48
+95	190	7065340674982437	feladat.exe	394442bffa60360b
+9	147	7070470282613048	CMakeFiles/feladat.dir/sources/movie.c.obj	c571b5cb5dea7f48
+2	148	7070470282613048	CMakeFiles/feladat.dir/main.c.obj	a169aaf05afaef49
+18	166	7070470282853094	CMakeFiles/feladat.dir/sources/catalog.c.obj	f4838d96bd387229
+166	271	7070470283863451	feladat.exe	394442bffa60360b
+2	78	7070470459881980	CMakeFiles/feladat.dir/main.c.obj	a169aaf05afaef49
+78	173	7070470460802319	feladat.exe	394442bffa60360b

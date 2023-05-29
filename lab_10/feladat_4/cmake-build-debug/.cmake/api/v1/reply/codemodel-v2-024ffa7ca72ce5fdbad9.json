@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "feladat_4",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "feladat_4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-feladat_4-Debug-4f00d99f9cc687392f1e.json",
+					"name" : "feladat_4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/DSA_2023/lab_10/feladat_4/cmake-build-debug",
+		"source" : "F:/Egyetem/I_ev/II_felev/adatszerkezetek_es_algortimusok/gyakorlat/DSA_2023/lab_10/feladat_4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

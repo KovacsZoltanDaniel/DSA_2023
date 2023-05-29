@@ -1,0 +1,4 @@
+# ninja log v5
+1	221	7065289288907955	CMakeFiles/lab_11.dir/main.c.obj	f230337cbb759255
+10	223	7065289288917954	CMakeFiles/lab_11.dir/sources/hash_table.c.obj	579e4081207f1d9a
+223	553	7065289292203540	lab_11.exe	610684f1b51e7e1b
