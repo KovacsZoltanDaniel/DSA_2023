@@ -59,11 +59,11 @@ Node *deleteNode(Node *root, int key) {
     }
     if(root->info < key){
         root->right = deleteNode(root->right,key);
-    }
+
     else if(root->info > key){
         root->left = deleteNode(root->left,key);
     }
-    else{
+    else{0
         //node to be deleted
         if(root->right == NULL && root->left == NULL){
             free(root);
